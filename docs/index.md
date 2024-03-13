@@ -1,9 +1,9 @@
 
-# Percona XtraBackup {{vers}} Documentation
+# Percona XtraBackup Documentation
 
 !!! note ""
 
-    This documentation is for the latest release: [Percona XtraBackup {{release}}](release-notes/{{release}}.md) release notes.
+    This documentation is for the latest release: [Percona XtraBackup](release-notes/{{release}}.md) release notes.
     This is an Innovation release. This type of release is only supported for a short time and is designed to be used in an environment with fast upgrade cycles. Developers and DBAs are exposed to the latest features and improvements.
 
 Percona XtraBackup is an open source hot backup utility for
@@ -54,24 +54,12 @@ Learn about the different types of backups and how to take them.
 ## Supported storage engines
 
 Percona XtraBackup can back up data from InnoDB, XtraDB,
-MyISAM, MyRocks tables on MySQL {{vers}} servers and Percona Server for MySQL with XtraDB, Percona Server for MySQL {{vers}}, and Percona XtraDB Cluster {{vers}}.
+MyISAM, MyRocks tables on MySQL servers and Percona Server for MySQL with XtraDB, Percona Server for MySQL, and Percona XtraDB Cluster.
 
-Percona XtraBackup {{vers}} supports the MyRocks storage engine. An incremental backup on the MyRocks storage engine does not determine if an earlier full or incremental backup contains duplicate files. Percona XtraBackup copies all MyRocks files each time it takes a backup.
+Percona XtraBackup supports the MyRocks storage engine. An incremental backup on the MyRocks storage engine does not determine if an earlier full or incremental backup contains duplicate files. Percona XtraBackup copies all MyRocks files each time it takes a backup.
 
 ### Limitations
 
-Percona XtraBackup {{vers}} does not support making backups of databases
-created in versions before {{vers}} of MySQL, Percona Server for MySQL or
+Percona XtraBackup does not support making backups of databases
+created in versions before of MySQL, Percona Server for MySQL or
 Percona XtraDB Cluster.
-
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3857510,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
